@@ -1,0 +1,610 @@
+/*通用属性部分*/
+/*版心*/
+.w{
+	margin: 0 auto;
+	width: 1200px;
+
+}
+/*去除常用元素的内偏距以及外偏距*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	margin:0;
+	padding:0;
+}
+/*去除列表之前的小点*/
+ul,ol{
+	list-style:none;
+}
+/*设定按钮的点击时的手指*/
+button {
+	cursor:pointer;
+}
+/*设定a元素的颜色以及去除下划线*/
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:hover {
+	color:#c81623;
+}
+/*设定按钮字体样式*/
+button,input {
+	font-family:Microsoft YaHei,tahoma,arial,Hiragino Sans GB,sans-serif;
+}
+.hide,.none {
+	display:none;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.al {
+	text-align:left;
+}
+.ac {
+	text-align:center;
+}
+.ar {
+	text-align:right;
+}
+.clear,.clr,.m,.mb,.mc,.mt,.p-detail,.p-img,.p-market,.p-name,.p-price,.sm,.smb,.smc,.smt {
+	overflow:hidden
+}
+/*=============================================================================*/
+body{
+	background-color: #f6f6f6;
+}
+#shortcut{
+	background-color: #e3e4e5;
+}
+#shortcut .w{
+	height:30px;
+	line-height:30px;
+	color:#999;
+
+}
+#shortcut .location{
+	margin-left: 10px;
+}
+#shortcut .aver{
+ margin-left: 180px;
+ /*position: relative;*/
+}
+#shortcut .aver li{
+	float: left;
+	padding: 0 8px;
+}
+#shortcut .aver li span{
+	display: block;
+	width: 1px;
+	height: 15px;
+	background-color: #ccc;
+	margin-top: 8px;
+}
+#shortcut .aver li a{
+	/*color: #999;*/
+	font-size: 12px;
+	display: inline-block;
+}
+#shortcut .aver li .small-icon{
+    width: 10px;
+    height: 20px;
+    position: relative;
+    top: 13px;
+    overflow: hidden;
+    display: inline-block;
+}
+#shortcut .aver li .small-icon p{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top:-15px;
+	font-size: 20px;
+}
+#head{}
+#head .w{
+ position: relative;
+ height: 140px;
+}
+/*#head .logo{
+	position: absolute;
+	top:-30px;
+	background-color: #fff;
+	box-shadow: 0 0px 10px rgba(0,0,0,.2);
+
+}
+#head .logo a{
+	display: block;
+	width: 190px;
+	height: 170px;
+	overflow: hidden;
+}*/
+/*搜索框*/
+#head .search{
+	position: relative;
+	height: 60px;
+}
+#head .search input{
+	position: absolute;
+	left: 310px;
+	top: 30px;
+    padding: 4px;
+    width: 490px;
+    height: 25px;
+    border: 1px solid #f10215;
+    line-height: 25px;
+    font-size: 14px;
+    color: #989898;
+}
+#head .search img{
+	position: absolute;
+	left: 810px;
+	top: 30px;
+	cursor: pointer;
+	width: 45px;
+	height: 36px;
+}
+
+#head .cwicon{
+	position: absolute;
+	left: 900px;
+	top: 30px;
+	width: 188px;
+    height: 33px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #e3e4e5
+}
+#head .cwicon span{
+	display: block;
+	width: 18px;
+	height: 16px;
+	/*background-color: #f00;*/
+	background-image: url("../images/jd2015img.png");
+	background-position: 0 -115px;
+	position: absolute;
+	left: 35px;
+	top: 10px;
+}
+#head .cwicon p{
+	position: absolute;
+    top: 5px;
+    left: 140px;
+    right: auto;
+    display: inline-block;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #f10215;
+    border-radius: 9px;
+    min-width: 12px;
+    text-align: center;
+}
+#head .cwicon a{
+	color: #f10214;
+	text-align: center;
+    line-height: 33px;
+    font-size: 10px;
+}
+/*物品详情*/
+#gooddetial{
+
+}
+
+/*图片放大*/
+#gooddetial #box{
+			width: 360px;
+			height: 360px;
+			border:2px solid #F0F0F0;
+			position: relative;
+		}
+#gooddetial #box #spec-img img{
+			width: 360px;
+			height: 360px;
+		}
+#gooddetial #box #spec-img{
+			position: relative;
+		}
+#gooddetial #box #spec-img .deck{
+			width: 150px;
+			height: 150px;
+			background-color: rgba(0,200,200,0.5);
+			position: absolute;
+			left: 0;
+			top:0;
+			display: none;
+			cursor: move;
+		}
+#gooddetial #box #detail-img{
+			width: 530px;
+			height: 480px;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 365px;
+			border:1px solid gray;
+			display: none;
+			z-index: 100;
+		}
+#gooddetial #box #detail-img img{
+			position: absolute;
+			left: 0;
+			top : 0;
+		}
+#gooddetial .spec-list{
+			position: relative;
+			height: 56px;
+			margin-top: 20px;
+		}
+#gooddetial .spec-list #spec-lists{
+			width: 350px;
+			position: absolute;
+			left: 10%;
+			margin-left: -105px;
+			overflow: hidden;
+		}
+#gooddetial .spec-list #spec-lists ul{
+			position: relative;
+			left: 0;
+			width: 300%;
+		}
+#gooddetial .spec-list #spec-lists li{
+			float: left;
+			margin: 0 8px;
+		}
+		/*商品选择*/
+#gooddetial .detial-cont{
+	position: absolute;
+	left: 500px;
+	top: 180px;
+}
+#gooddetial .detial-cont h3{
+	margin-bottom: 10px;
+}
+#gooddetial .detial-cont .titlename{
+	font-size: 14px;
+	color: orange;
+}
+#gooddetial .detial-cont .marbotton10{
+	margin-bottom: 10px;
+}
+#gooddetial .detial-cont .good-pice{
+	background-color: #E0E0E0;
+}	
+#gooddetial .detial-cont .good-pice .pevrpice{
+	text-decoration: line-through;
+	margin-left: 5px;
+	color: #ADADAD;
+}
+#gooddetial .detial-cont .good-pice .nowpice{
+	font-size: 20px;
+	color: #f00;
+	margin-left: 5px;
+}
+#gooddetial .detial-cont .good-pice .picedown{
+	font-size: 14px;
+	margin-left: 5px;
+}
+#gooddetial .detial-cont .good-pice .preferential{
+	margin-left: 5px;
+	font-size: 14px;
+}
+#gooddetial .detial-cont .good-pice .letterspace{
+	letter-spacing: 1em;
+	color: #8e8e8e;
+}
+#gooddetial .detial-cont .good-pice  .seestatus{
+	font-size: 13px;
+	color: blue;
+	margin-left: 5px;	
+}
+#gooddetial .detial-cont .adress{}
+#gooddetial .detial-cont .adress .letterspace{
+	letter-spacing: 1em;
+	color: #8e8e8e;
+}
+#gooddetial .detial-cont .adress .adresss{
+	margin-left: 5px;
+	font-size: 14px;
+}
+#gooddetial .detial-cont .specifications{}
+#gooddetial .detial-cont .specifications .letterspace{
+	letter-spacing: 1em;
+	color: #8e8e8e;
+}
+#gooddetial .detial-cont .specifications dl{
+	overflow: hidden;
+}
+#gooddetial .detial-cont .specifications dl dt{
+	float: left;
+}
+#gooddetial .detial-cont .specifications dl dd{
+	float: left;
+}
+#gooddetial .detial-cont .specifications dl dd ul{
+	overflow: hidden;
+}
+#gooddetial .detial-cont .specifications dl dd ul li{
+	float: left;
+	width: 90px;
+	height: 40px;
+	border: 1px solid #9d9d9d;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 5px;
+	margin-bottom: 6px;
+}
+#gooddetial .detial-cont .specifications dl dd ul li a{
+	text-align: center;
+	line-height: 40px;
+	/*font-size: 12px;*/
+}
+#gooddetial .detial-cont .specifications dl dd ul li img{
+	width: 38px;
+	height: 38px;
+	margin-right: 3px;
+}
+#gooddetial .detial-cont .specifications dl dd .fenqi li a{
+	font-size: 12px;
+
+}
+#gooddetial .detial-cont .specifications dl dt{
+	font-size: 14px;
+	color: #8e8e8e;
+}
+#gooddetial .detial-cont .specifications dl .goodsnum{
+	margin-left: 15px;
+}
+#gooddetial .detial-cont .specifications dl .goodsnum button{
+	width: 20px;
+	height: 30px;
+}
+#gooddetial .detial-cont .specifications dl .goodsnum input{
+	width: 20px;
+	height: 25px;
+	padding-left: 10px;
+}
+#gooddetial .detial-cont .specifications .buy{
+	margin-left: 60px;
+	margin-top: 30px;
+}
+#gooddetial .detial-cont .specifications .buy .Buy-now{
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	background-color: #ff2d2d;
+	border: 1px solid #ff2d2d;
+	color: #fff;
+	font-size: 18px;
+}
+#gooddetial .detial-cont .specifications .buy .Add-cart{
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	background-color: #00db00;
+	border: 1px solid #00db00;
+	color: #fff;
+	font-size: 18px;
+}
+/*商品详情*/
+#gooddetial .cut-off{
+	position: relative;
+	top:80px; 
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+}
+#gooddetial .products-introduction{
+	position: relative;
+	left: 300px;
+	top: 100px;
+}
+#gooddetial .products-introduction ul{
+	overflow: hidden;
+}
+#gooddetial .products-introduction ul li{
+	float: left;
+	width: 100px;
+	height: 50px;
+	border: 1px solid #E0E0E0;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+#gooddetial .products-introduction ul li:first-child{
+	background-color: #f75000;
+	color: #fff;
+}
+#gooddetial .introduction-cont{
+	position: relative;
+	top: 105px;
+	left: 300px;
+}
+#gooddetial .introduction-cont .item1{
+	/*display: none;*/
+	margin-bottom: 150px;
+}
+#gooddetial .introduction-cont .item2{
+	display: none;
+	margin-bottom: 150px;
+
+}
+#gooddetial .introduction-cont .item3{
+	height: 800px;
+	display: none;
+}
+#gooddetial .introduction-cont .item4{
+	height: 800px;
+	display: none;
+}
+#gooddetial .introduction-cont .item5{
+	height: 800px;
+	display: none;
+}
+#gooddetial .introduction-cont .item2 table{
+	margin-top: 10px;
+}
+#gooddetial .introduction-cont .item2 table tbody{
+
+}
+#gooddetial .introduction-cont .item2 table tbody tr th{
+	height: 30px;
+	/*width: 600px;*/
+	background-color: #8e8e8e;
+}
+#gooddetial .introduction-cont .item2 table tbody tr td:first-child{
+	width: 100px;
+	height: 40px;
+	border: 1px solid #e0e0e0;
+	line-height: 40px;
+}
+#gooddetial .introduction-cont .item2 table tbody tr td:last-child{
+	width: 500px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e0e0e0;
+}
+/*底部设计*/
+#J_f{
+		background-color: #eaeaea;
+}
+#J_f .w{
+
+}
+#J_f .mod_service{
+	padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+#J_f .mod_service .grid_c1{
+	margin: 0 auto;
+}
+#J_f .mod_service .grid_c1 ul{
+	overflow: hidden;
+    height: 42px;
+}
+#J_f .mod_service .grid_c1 ul li{
+	float: left;
+    width: 297px;
+}
+#J_f .mod_service .grid_c1 ul li div{
+	 position: relative;
+    margin: 0 auto;
+    padding-left: 45px;
+    width: 180px;
+}
+#J_f .mod_service .grid_c1 ul li div h5{
+	overflow: hidden;
+	width: 36px;
+	height: 42px;
+	background-image: url("../images/icoservice.png");
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+#J_f .mod_service .grid_c1 ul li div .duo{
+	background-position: 0 0px;
+}
+#J_f .mod_service .grid_c1 ul li div .kuai{
+	background-position: 0 -43px;
+
+}
+#J_f .mod_service .grid_c1 ul li div .hao{
+	
+	background-position: 0 -86px;
+}
+#J_f .mod_service .grid_c1 ul li div .sheng{
+	background-position: 0 -129px;
+}
+#J_f .mod_service .grid_c1 ul li div p{
+	overflow: hidden;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #444;
+}
+/*更多帮助*/
+#J_f .mod_help{
+	padding: 20px 0;
+}
+#J_f .mod_help .mod_help_inner{
+	margin: 0 auto;
+}
+#J_f .mod_help .mod_help_inner .mod_help_list{
+	overflow: hidden;
+    height: 160px;
+    color: #666;
+}
+#J_f .mod_help .mod_help_inner .mod_help_list h5{
+	margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+#J_f .mod_help .mod_help_inner .mod_help_list .mod_help_nav{
+	float: left;
+    width: 198px;
+    line-height: 22px;
+}
+#J_f .mod_help .mod_help_inner .mod_help_list .mod_help_nav a{
+	
+	font-size: 12px;
+}
+#J_f .mod_help .mod_help_inner .mod_help_list .mod_help_cover{
+	width: 200px;
+	height: 150px;
+	background-image: url("..images/ico_footer.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	float: right;
+}
+#J_f .mod_help .mod_help_inner .mod_help_list .mod_help_cover p{
+
+	font-size: 12px;
+ }
+#J_f .mod_help .mod_help_inner .mod_help_list .mod_help_cover .mod_help_cover_more{
+	text-align: right;
+}
+#J_f .mod_copyright{
+	    text-align: center;
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_links{
+	font-size: 12px;
+
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_info{
+	padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+    font-size: 12px;
+
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a{
+	display: inline-block;
+	width: 103px;
+	height: 32px;
+	background-image: url("../images/ico_footer.png");
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a.mod_copyright_auth_ico_1{
+	background-position: 0 -151px;
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a.mod_copyright_auth_ico_2{
+	background-position: -104px -151px;
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a.mod_copyright_auth_ico_3{
+	background-position: 0 -184px;
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a.mod_copyright_auth_ico_4{
+	background-position: -104px -184px;
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a.mod_copyright_auth_ico_5{
+	background-position: 0 -217px;
+}
+#J_f .mod_copyright .mod_copyright_inner .mod_copyright_auth a.mod_copyright_auth_ico_6{
+	background-position: -104px -217px;
+}

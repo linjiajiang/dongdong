@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	#landing{
+			margin: 100px auto;
+			border: 3px solid #F0F0F0;
+			width: 275px;
+			height: 440px;
+			padding: 30px;
+		}
+	.account{
+			margin-bottom: 30px;
+	}
+	.account h1{
+		margin-bottom: 20px;
+	}
+	.account>p{
+		font-size: 12px;
+	}
+	.account .accountname{
+		width: 260px;
+		height: 26px;
+		padding-left: 5px;
+		margin-bottom: 10px;
+	}
+	.account>div{
+		width: 270px;
+		height: 60px;
+		overflow: hidden;
+	}
+	.account>div span{
+		font-size: 13px;
+	}
+	.account>div a{
+		float: right;
+		font-size: 14px;
+	}
+	.account>div input{
+		width: 260px;
+		height: 26px;
+		padding-left: 5px;
+	}
+	.account .loadbtn{
+		width: 270px;
+		height: 30px;
+		margin: 10px 0;
+		background-color: #f2cc6b;
+		border: 0;
+	}
+	.rember{
+		font-size: 13px;
+	}
+	.othsermethod{
+		text-align: center;
+	}
+	.othsermethod .otherload{
+		margin-bottom: 10px;
+	}
+	.othsermethod .wechatmethod{
+		width: 270px;
+		height: 30px;
+		background-color: #3bd71f;
+		border: 0;
+		margin-bottom: 10px;
+	}
+	.othsermethod .newaccount{
+		margin-bottom: 10px;
+	}
+	.othsermethod .createnewaccount{
+		width: 270px;
+		height: 30px;
+		background-color: #f0f1f4;
+		border: 0;
+	}
+	</style>
+</head>
+<body>
+	<div id="landing">
+		<div class="account">
+			<h1>登录</h1>
+			<p>邮箱地址或者手机号码</p>
+			<input type="text" class="accountname"/>
+			<div>
+				<span>密码</span>
+				<a href="#">忘记密码</a>
+				<input type="password" />
+			</div>
+			<button class="loadbtn">登录</button>
+			<br />
+			<input  type="checkbox" /><span class="rember">记住登录状态</span>
+		</div>
+		<div class="othsermethod">
+			<p class="otherload">其他登录方式</p>
+			<button class="wechatmethod">微信账号登录</button>
+			<p class="newaccount">新客户？</p>
+			<button class="createnewaccount">创建您的账号</button>
+		</div>
+	</div>
+</body>
+</html>
